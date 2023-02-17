@@ -48,12 +48,12 @@ const Notification: NextPage<NotificationProps> = ({ sensex, company, tfid, show
                     <div>
                         { price }
                     </div>
-                    <button onClick={ handleClose } className="text-white hover:text-gray-300">
+                    <button onClick={ handleClose } className="text-white hover:text-gray-300 mix-blend-hue">
                         <Image
                             src={ closeSymbol || "" }
                             width={ 15 }
                             height={ 15 }
-                            alt="close"
+                            alt=""
                         />
                     </button>
                 </div>

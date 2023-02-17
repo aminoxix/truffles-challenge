@@ -71,12 +71,12 @@ export default function Chart()
 {
   return (
     <LineChart
-      width={ 1200 }
-      height={ 600 }
+      width={ 1000 }
+      height={ 500 }
       data={ data }
       margin={ {
         top: 5,
-        right: 30,
+        right: 150,
         left: 10,
         bottom: 25
       } }

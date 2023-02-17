@@ -78,19 +78,19 @@ function UserInformation()
   }
 
   return (
-    <>
+    <div className="h-screen">
       <NavBar />
-      <div className="ml-12 mr-24 mt-10 mb-20 flex justify-between font-inter">
+      <div className="ml-12 mr-24 mt-10 mb-20 flex flex-1 justify-between font-inter">
         <div className="flex flex-col items-center">
           <Stepper currentStep={ currentStepIndex } />
         </div>
-        <div className="relative max-w-max rounded bg-white p-4">
+        <div className="rounded bg-white px-4 w-2/3">
           <form onSubmit={ onSubmit }>
             { step }
             <div className="mt-16 flex justify-around gap-4">
               { isLastStep ? (
                 <Link
-                  className="rounded-md bg-brand py-2 px-8 font-bold text-white hover:bg-brand"
+                  className="rounded-md bg-brand py-2 px-8 font-bold text-white hover:bg-violet-800 w-32 flex justify-center"
                   type="submit"
                   href="/"
                 >
@@ -102,13 +102,13 @@ function UserInformation()
                     <button
                       type="button"
                       onClick={ back }
-                      className="rounded-md bg-gray-300 py-2 px-8 font-bold text-gray-800 hover:bg-gray-400"
+                      className="rounded-md bg-gray-300 py-2 px-8 font-bold text-gray-800 hover:bg-gray-400 w-32 flex justify-center"
                     >
                       Back
                     </button>
                   ) }
                   <button
-                    className="rounded-md bg-brand py-2 px-8 font-bold text-white hover:bg-brand"
+                    className="rounded-md bg-brand py-2 px-8 font-bold text-white hover:bg-violet-800 w-32 flex justify-center"
                     type="button"
                     onClick={ next }
                   >
@@ -120,7 +120,7 @@ function UserInformation()
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -30,8 +30,8 @@ const Toast: NextPage<ToastProps> = ({ symbol, message, description, show, close
 
     return (
         <div>
-            <div className="flex basis-20 shrink-0 items-center font-inter justify-between px-6 py-3 text-sm font-medium border border-transparent rounded-md shadow-sm">
-                <div className="flex basis-14 shrink-0 items-center justify-center">
+            <div className="flex basis-20 items-center font-inter justify-between px-6 py-3 text-sm font-medium border border-transparent rounded-md shadow-sm">
+                <div className="flex basis-14 items-center justify-center">
                     <Image
                         src={ symbol || "" }
                         width={ 30 }

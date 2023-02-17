@@ -37,7 +37,10 @@ const SideBar = () =>
                 className="flex hover:bg-white rounded-md p-2 items-center font-normal"
               >
                 <div
-                  className={ menu.title.toLowerCase() == router.pathname.slice(1).toLowerCase() ? `flex h-8 w-8 justify-center bg-[linear-gradient(95.79deg,#A76FFF_10.21%,#7445F8_100%)] rounded-md shadow-xl` : `flex h-8 w-8 justify-center bg-white rounded-md shadow-xl` }
+                  className={ menu.title.toLowerCase() == router.pathname.slice(1).toLowerCase() 
+                    ? `flex h-8 w-8 justify-center bg-[linear-gradient(95.79deg,#A76FFF_10.21%,#7445F8_100%)] rounded-md shadow-xl` 
+                    : `flex h-8 w-8 justify-center bg-white rounded-md shadow-xl` 
+                  }
                 >
                   <Image
                     src={ menu.src }
